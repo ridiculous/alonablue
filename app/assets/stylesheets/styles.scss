@@ -133,13 +133,10 @@ body .demo-blog {
 }
 
 .alona-blue .crew-pic .mdl-card__media {
-  background-image: url('boat/bgbg.jpg');
+  background-image: image-url('boat/bgbg.jpg');
   background-position: bottom left;
 }
 
-/*.demo-blog .coffee-pic .mdl-card__media {*/
-/*background-image: url('coffee.jpg');*/
-/*}*/
 .demo-blog .something-else .mdl-card__media {
   display: flex;
   flex-direction: column;
@@ -168,12 +165,12 @@ body .demo-blog {
 }
 
 .demo-blog .the-crew .mdl-card__media {
-  background-image: url('boat/crew.jpg');
+  background-image: image-url('boat/crew.jpg');
   height: 500px;
 }
 
 .demo-blog .shopping .mdl-card__media {
-  background-image: url('shopping.jpg');
+  background-image: image-url('shopping.jpg');
 }
 
 .demo-blog .demo-blog__posts > .demo-nav {
@@ -237,7 +234,7 @@ body .demo-blog {
 }
 
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url('road_big.jpg');
+  background-image: image-url('road_big.jpg');
   height: 280px;
 }
 
@@ -374,7 +371,7 @@ body .demo-blog {
 .alona-blue .minilogo {
   width: 44px;
   height: 44px;
-  background-image: url('alonablue-logo.jpg');
+  background-image: image-url('alonablue-logo.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80%;
