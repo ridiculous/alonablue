@@ -17,7 +17,7 @@
 @import '_color-definitions.scss';
 $color-primary: $palette-grey-500;
 $color-primary-dark: $palette-grey-300;
-$color-accent: $palette-orange-A200;
+$color-accent: '60,75 ,175'; // $palette-blue-A700;
 /* $color-primary-contrast: $color-light-contrast; */
 /* $color-accent-contrast: $color-light-contrast; */
 @import 'material-design-lite';
