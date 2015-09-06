@@ -107,3 +107,88 @@
     background-repeat: no-repeat;
   }
 }
+
+.girl-card {
+  .card_media {
+    background-image: image-url('boat/girl.jpg');
+    height: 420px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.card-group {
+  .card_media {
+    height: 350px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.galley-card {
+  .card_media {
+    background-image: image-url('boat/table-in-galley.jpg');
+  }
+}
+
+.captaining-card {
+  .card_media {
+    background-image: image-url('boat/captaining.jpg');
+  }
+}
+
+.the-head-card {
+  .card_media {
+    background-image: image-url('boat/the-head.jpg');
+  }
+}
+
+.kitchen-card {
+  .card_media {
+    background-image: image-url('boat/kitchen2.jpg');
+  }
+}
+
+.guest-bed-card {
+  .card_media {
+    background-image: image-url('boat/guest-bed.jpg');
+  }
+}
+
+.master-bed-card {
+  .card_media {
+    background-image: image-url('boat/master-bed-room.jpg');
+  }
+}
+
+.girls-on-ladder-card {
+  .card_media {
+    background-image: image-url('boat/girls-on-ladder.jpg');
+  }
+}
+
+.backdeck-card {
+  .card_media {
+    background-image: image-url('boat/backdeck.jpg');
+  }
+}
+
+.frontdeck-card {
+  .card_media {
+    background-image: image-url('boat/frontdeck.jpg');
+  }
+}
+
+.sunset-card {
+  .card_media {
+    background-image: image-url('boat/sunset.jpg');
+  }
+}
+
+.foxy-sunset-card {
+  .card_media {
+    background-image: image-url('boat/foxy-sunset.jpg');
+  }
+}

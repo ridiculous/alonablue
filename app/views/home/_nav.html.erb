@@ -13,9 +13,9 @@
     </div>
 
     <div class="nav_btn col-2">
-      <button class="btn btn-orange btn-round btn-gallery">
-        <span class="visuallyhidden">view the photo gallery</span>
-      </button>
+      <%= button_tag(class: "btn btn-orange btn-round btn-gallery #{active[:gallery]}", onclick: "location.assign('#{gallery_path}')") do %>
+          <span class="visuallyhidden">view the photo gallery</span>
+      <% end %>
     </div>
 
     <div class="nav_btn col-2">

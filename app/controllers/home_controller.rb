@@ -4,4 +4,7 @@ class HomeController < ApplicationController
 
   def catamaran
   end
+
+  def gallery
+  end
 end
