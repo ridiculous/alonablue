@@ -1,0 +1,156 @@
+@import 'vars';
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $body-color;
+  font-family: $standard-font;
+  font-size: $font-size;
+  line-height: $font-size + 2;
+  color: $font-color;
+}
+
+body::before {
+  background-image: image-url('super-blue-cat.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom left;
+  content: '';
+  will-change: transform;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+}
+
+p, ol, ul, td {
+  font-family: $font-family3;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: 1px;
+}
+
+h1 {
+  line-height: 35px;
+}
+
+h2 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+}
+
+h3,
+h4,
+h5 {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 20px;
+}
+
+h5 {
+  margin: 25px 0;
+}
+
+.text-area {
+  resize: none;
+  border: 1px solid #ccc;
+}
+
+.full {
+  .text-area {
+    width: 98%;
+  }
+}
+
+textarea,
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number] {
+  padding: 5px;
+  font-size: 16px;
+//  @include rounded(3px);
+}
+
+input[type=email],
+input[type=text] {
+  vertical-align: middle;
+}
+
+input[type=email]:invalid {
+  border: 1px solid $red;
+  outline: none;
+}
+
+input[type=text],
+input[type=number] {
+  vertical-align: middle;
+}
+
+input[type=number] {
+  &:invalid {
+    border: 1px solid $red;
+    outline: none;
+  }
+}
+
+table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 5px 0;
+  margin: 0;
+  text-align: left;
+}
+
+td {
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+th {
+  font-size: 16px;
+  border-bottom: 1px solid #DDD;
+}
+
+pre {
+  font-size: 16px;
+  line-height: 20px;
+  background: #FFF;
+}
+
+img {
+  vertical-align: middle;
+}

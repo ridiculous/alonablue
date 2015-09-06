@@ -1,0 +1,115 @@
+@import 'mixins';
+
+.alona-blue {
+  &.layout {
+    padding: 20px;
+  }
+
+  .layout-content {
+    position: relative;
+    top: 20px;
+  }
+
+  .layout-content,
+  .footer {
+    max-width: 980px;
+    margin: auto;
+    text-align: center;
+
+    div, p, h1, h2, h3 {
+      text-align: left;
+    }
+  }
+
+  .logo {
+    width: 250px;
+    height: 268px;
+    background-image: image-url('alonablue-logo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto;
+
+    &.mini {
+      width: 32px;
+      height: 32px;
+      background-size: 80%;
+    }
+  }
+
+  .jenny-card {
+    .card_media {
+      height: 316px;
+      background-image: image-url('boat/bgbg.jpg');
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: none;
+    }
+  }
+
+  .logo-card {
+    .card_media {
+      text-align: center;
+      padding: 24px;
+    }
+  }
+
+  .the-crew-card {
+    .card_media {
+      background-image: image-url('boat/crew.jpg');
+      height: 500px;
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: none;
+    }
+  }
+
+  .color-text-grey-600 {
+    color: #757575 !important;
+  }
+
+  .inline {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .white-text {
+    color: #FFFFFF;
+  }
+
+  .btn-blue {
+    @include btn($blue);
+  }
+
+  .btn-round {
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12),0 1px 1px 0 rgba(0, 0, 0, 0.24);
+    line-height: normal;
+    @include rounded(50%);
+  }
+
+  .btn-email {
+    padding: 21px 14px;
+  }
+
+  .btn_nav {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+
+  .footer {
+    .footer-content {
+      box-sizing: border-box;
+      margin: 20px 10px;ac
+      background-color: #FFF;
+      padding: 24px;
+    }
+  }
+
+  .visuallyhidden {
+    visibility: visible;
+    display: none;
+  }
+}

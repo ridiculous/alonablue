@@ -1,0 +1,55 @@
+@import 'vars';
+
+@mixin btn-foundation {
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  vertical-align: middle;
+  -moz-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
+  cursor: pointer;
+
+  &.btn-large {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  &.btn-med {
+    padding: 5px 10px;
+  }
+
+  &.btn-small {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+}
+
+@mixin btn($color) {
+  background-color: $color;
+  border: 1px solid darken($color, 20%);
+  color: $white;
+  @include btn-foundation;
+
+  &:hover {
+    background-color: darken($color, 2%);
+    text-decoration: none;
+  }
+
+  &.active,
+  &:active {
+    border-color: lighten($color, 40%);
+    background-color: lighten($color, 10%);
+  }
+
+  &:visited {
+    color: $white;
+  }
+}
+
+@mixin rounded($roundness) {
+  -moz-border-radius: $roundness;
+  -webkit-border-radius: $roundness;
+  border-radius: $roundness;
+}

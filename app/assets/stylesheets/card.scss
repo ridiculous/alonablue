@@ -1,0 +1,36 @@
+@import 'vars';
+
+.card {
+  box-sizing: border-box;
+  margin: 10px;
+  background-color: $blue;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+
+  &.white {
+    background-color: #FFF;
+  }
+
+  .card_support {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 25px 10px 25px 15px;
+
+    &.grey {
+      background: #F5F5F5;
+    }
+  }
+
+  .card_title {
+    padding: 16px;
+  }
+
+  .card_body {
+    padding: 0 16px;
+    &.bordered {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+}

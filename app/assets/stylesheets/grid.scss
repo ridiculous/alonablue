@@ -1,0 +1,36 @@
+.grid {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 1px;
+  }
+  .row-4-col,
+  .row-8-col,
+  .row-12-col {
+    float: right;
+  }
+
+  .row-8-col {
+    width: 66%;
+  }
+
+  .row-4-col {
+    width: 33%;
+  }
+
+  .row-12-col {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .grid {
+    .row-4-col,
+    .row-8-col {
+      width: 99%;
+    }
+  }
+}
