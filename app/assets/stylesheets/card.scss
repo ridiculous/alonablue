@@ -38,3 +38,30 @@
     }
   }
 }
+
+.jenny-card {
+  .card_media {
+    height: 316px;
+    background-image: image-url('boat/bgbg.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: none;
+  }
+}
+
+.logo-card {
+  .card_media {
+    text-align: center;
+    padding: 24px;
+  }
+}
+
+.the-crew-card {
+  .card_media {
+    background-image: image-url('boat/crew.jpg');
+    height: 500px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: none;
+  }
+}

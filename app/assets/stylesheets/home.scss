@@ -43,33 +43,6 @@
     }
   }
 
-  .jenny-card {
-    .card_media {
-      height: 316px;
-      background-image: image-url('boat/bgbg.jpg');
-      background-position: 50% 50%;
-      background-size: cover;
-      background-repeat: none;
-    }
-  }
-
-  .logo-card {
-    .card_media {
-      text-align: center;
-      padding: 24px;
-    }
-  }
-
-  .the-crew-card {
-    .card_media {
-      background-image: image-url('boat/crew.jpg');
-      height: 500px;
-      background-position: 50% 50%;
-      background-size: cover;
-      background-repeat: none;
-    }
-  }
-
   .color-text-grey-600 {
     color: #757575 !important;
   }
@@ -81,29 +54,6 @@
 
   .white-text {
     color: #FFFFFF;
-  }
-
-  .btn-blue {
-    @include btn($blue);
-  }
-
-  .btn-round {
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
-    line-height: normal;
-    @include rounded(50%);
-  }
-
-  .btn-email {
-    padding: 21px 14px;
-  }
-
-  .btn_nav {
-    width: 100%;
-    position: absolute;
-    top: -20px;
-    right: 0;
   }
 
   .footer {
@@ -138,10 +88,6 @@
   }
 
   .center {
-    text-align: center !important;
-  }
-
-  .nav_btn {
     text-align: center !important;
   }
 }

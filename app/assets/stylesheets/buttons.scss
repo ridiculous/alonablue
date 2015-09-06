@@ -1,0 +1,70 @@
+@import 'mixins';
+@import 'vars';
+
+.btn-blue {
+  @include btn($blue);
+}
+
+.btn-orange {
+  @include btn($orange);
+}
+
+.btn-teal {
+  @include btn($teal);
+}
+
+.btn-green {
+  @include btn($dark-green);
+}
+
+.btn-light-teal {
+  @include btn($light-teal);
+}
+
+.btn-round {
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  line-height: normal;
+  @include rounded(50%);
+}
+
+.btn_nav {
+  width: 100%;
+  position: absolute;
+  top: -35px;
+  right: 0;
+}
+
+.nav_btn {
+  text-align: center !important;
+
+  button {
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0;
+    height: 60px;
+    width: 60px;
+  }
+
+  .btn-compass {
+    background-image: image-url('icons/white-compass.png');
+  }
+
+  .btn-boat {
+    background-image: image-url('icons/ic_directions_boat_white_24dp_2x.png');
+  }
+
+  .btn-location {
+    background-image: image-url('icons/ic_place_white_24dp_2x.png');
+  }
+
+  .btn-gallery {
+    background-image: image-url('icons/ic_photo_camera_white_24dp_2x.png');
+  }
+
+  .btn-email {
+    background-image: image-url('icons/mail-icon-white.png');
+  }
+}

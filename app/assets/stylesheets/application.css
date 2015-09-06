@@ -12,6 +12,7 @@
  *
  *= require mixins
  *= require vars
+ *= require buttons
  *= require base
  *= require home
  *= require card
