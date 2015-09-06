@@ -7,22 +7,42 @@
     clear: both;
     height: 1px;
   }
+  .row-1-col,
+  .row-2-col,
   .row-4-col,
   .row-8-col,
+  .row-10-col,
+  .row-11-col,
   .row-12-col {
-    float: right;
+    float: left;
   }
 
-  .row-8-col {
-    width: 66%;
+  .row-1-col {
+    width: 8.333333333%;
+  }
+
+  .row-2-col {
+    width: 16.666666667%;
   }
 
   .row-4-col {
-    width: 33%;
+    width: 33.666666666667%;
+  }
+
+  .row-8-col {
+    width: 66.33333333333%;
+  }
+
+  .row-10-col {
+    width: 83.333333333%;
+  }
+
+  .row-11-col {
+    width: 91.666666667%;
   }
 
   .row-12-col {
-    width: 99%;
+    width: 100%;
   }
 }
 
@@ -30,7 +50,7 @@
   .grid {
     .row-4-col,
     .row-8-col {
-      width: 99%;
+      width: 100%;
     }
   }
 }
