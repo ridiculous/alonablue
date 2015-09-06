@@ -3,10 +3,10 @@
 .alona-blue {
   &.layout {
     min-width: 300px;
-    padding: 20px;
+    padding: 40px 20px;
 
     @media screen and (max-width: 800px) {
-      padding: 10px;
+      padding: 40px 10px;
     }
   }
 
@@ -100,9 +100,10 @@
   }
 
   .btn_nav {
+    width: 100%;
     position: absolute;
-    top: 0;
-    right: 20px;
+    top: -20px;
+    right: 0;
   }
 
   .footer {
@@ -134,5 +135,13 @@
 
   .left {
     float: left !important;
+  }
+
+  .center {
+    text-align: center !important;
+  }
+
+  .nav_btn {
+    text-align: center !important;
   }
 }

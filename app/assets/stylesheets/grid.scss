@@ -46,6 +46,22 @@
   }
 }
 
+.grid-10 {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 1px;
+  }
+
+  .col-2 {
+    float: left;
+    width: 20%;
+  }
+}
+
 @media screen and (max-width: 930px) {
   .grid {
     .row-4-col,
