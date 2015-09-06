@@ -1,21 +1,15 @@
 <div class="btn_nav">
   <div class="grid-10">
     <div class="nav_btn col-2">
-      <button class="btn btn-blue btn-round btn-compass">
-        <span class="visuallyhidden">view the home page</span>
-      </button>
+      <%= button_tag(class: "btn btn-blue btn-round btn-compass #{active[:home]}", onclick: "location.assign('#{root_path}')") do %>
+          <span class="visuallyhidden">view the home page</span>
+      <% end %>
     </div>
 
     <div class="nav_btn col-2">
-      <button class="btn btn-light-teal btn-round btn-boat">
-        <span class="visuallyhidden">description of the alona blue catamaran</span>
-      </button>
-    </div>
-
-    <div class="nav_btn col-2">
-      <button class="btn btn-teal btn-round btn-location">
-        <span class="visuallyhidden">find alona blue on the map</span>
-      </button>
+      <%= button_tag(class: "btn btn-light-teal btn-round btn-boat #{active[:catamaran]}", onclick: "location.assign('#{catamaran_path}')") do %>
+          <span class="visuallyhidden">description of the alona blue catamaran</span>
+      <% end %>
     </div>
 
     <div class="nav_btn col-2">
@@ -27,6 +21,12 @@
     <div class="nav_btn col-2">
       <button class="btn btn-green btn-round btn-email">
         <span class="visuallyhidden">contact us</span>
+      </button>
+    </div>
+
+    <div class="nav_btn col-2">
+      <button class="btn btn-teal btn-round btn-location">
+        <span class="visuallyhidden">find alona blue on the map</span>
       </button>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <div class="grid">
   <div class="row-4-col right">
     <div class="card white logo-card">
-      <%= render 'nav' %>
+      <%= render partial: 'nav', locals: { active: { home: 'active' } } %>
       <div class="card_media">
         <div class="alona-blue logo"></div>
       </div>
@@ -17,7 +17,9 @@
       <div class="card_media"></div>
       <div class="card_support meta color-text-grey-600">
         <div class="grid">
-          <div class="left"><div class="logo mini"></div></div>
+          <div class="left">
+            <div class="logo mini"></div>
+          </div>
           <div class="row-10-col">
             <div style="padding-top: 6px; padding-left: 10px;">
               <strong>Private sailing charters in the Central Visayas, Philippines</strong>
@@ -59,10 +61,35 @@
     </div>
   </div>
   <div class="row-12-col">
-    <div class="card the-crew-card white">
+    <div class="card white-text the-crew-card">
       <div class="card_media"></div>
-      <div class="card_support color-text-grey-600 grey">
-        <p>Captain Mike, First Mate Jenny and Foxy</p>
+      <div class="card_title">
+        <h2>Meet the crew</h2>
+      </div>
+      <div class="card_body bordered">
+        <p>
+          Captain Mike, an American national, has lived in the Philippines for 13 years. He grew up around boats and
+          started serious sailing at the age of 16 in Southern California. He relocated to Hawaii and spent 30 years
+          sailing and operating charter boats from there.
+        </p>
+
+        <p>
+          Mike has sailed the west coast of California, Mexico, the Great Lakes and the east coast of America down to
+          the Bahamas. He has a US Coast Guard Merchant Mariners license for 100 ton vessels and lots of great stories
+          to share. His love of the sea and sailing will enrich your time aboard Alona Blue which he finished building
+          in 2013.
+        </p>
+
+        <p>
+          First Mate, Jenny, is a native Filipina and is a natural on the water. She is a great cook and very
+          knowledgeable in the culture of the Philippines.
+        </p>
+
+        <p>
+          Your Second Mate is our wonderful Pomeranian, “Foxy” who is 8 years old and loves the sailing life as much as
+          we do. She is a delight to all who meet her and will certainly make your time with us extra special.
+        </p>
+
       </div>
     </div>
   </div>

@@ -34,6 +34,7 @@
   position: absolute;
   top: -35px;
   right: 0;
+  z-index: 10;
 }
 
 .nav_btn {
@@ -43,7 +44,7 @@
     padding: 0;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 33px;
+    background-size: 35px;
     height: 60px;
     width: 60px;
   }
@@ -53,7 +54,7 @@
   }
 
   .btn-boat {
-    background-image: image-url('icons/ic_directions_boat_white_24dp_2x.png');
+    background-image: image-url('icons/boat-icon.png');
   }
 
   .btn-location {
@@ -66,6 +67,20 @@
 
   .btn-email {
     background-image: image-url('icons/mail-icon-white.png');
+  }
+}
+
+.large {
+  @media screen and (min-width: 800px) {
+    .btn_nav {
+      top: -45px;
+    }
+
+    .nav_btn button {
+      background-size: 38px;
+      height: 80px;
+      width: 80px;
+    }
   }
 }
 
