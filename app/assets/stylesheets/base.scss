@@ -13,21 +13,22 @@ body {
   font-size: $font-size;
   line-height: $font-size + 2;
   color: $font-color;
-}
+//}
 
-body::before {
-  background-image: image-url('super-blue-cat.jpg');
+//body::before {
+  background: image-url('super-blue-cat.jpg') no-repeat center center fixed;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom left;
-  content: '';
-  will-change: transform;
-  z-index: -1;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
-  position: fixed;
   min-width: 100%;
   min-height: 100%;
 }
