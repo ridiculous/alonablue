@@ -2,6 +2,7 @@
 
 .alona-blue {
   &.layout {
+    min-width: 350px;
     padding: 20px;
   }
 
@@ -111,5 +112,12 @@
   .visuallyhidden {
     visibility: visible;
     display: none;
+  }
+
+  @media screen and (max-width: 400px) {
+    h2 {
+      font-size: 28px;
+      line-height: 32px;
+    }
   }
 }
