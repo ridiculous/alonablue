@@ -70,6 +70,24 @@
     }
   }
 
+  .error_flash_message {
+    margin: 20px 10px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px;
+    color: $orange;
+    border: 1px solid $orange;
+  }
+
+  .notice_flash_message {
+    margin: 20px 10px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px;
+    color: $blue;
+    border: 1px solid $blue;
+  }
+
   .visuallyhidden {
     visibility: visible;
     display: none;
@@ -95,6 +113,13 @@
     label,
     input[type=checkbox] {
       cursor: pointer;
+    }
+  }
+
+  .field_with_errors {
+    input,
+    textarea {
+      border: 1px solid $orange;
     }
   }
 }
