@@ -1,3 +1,9 @@
-<%= @record.attributes.each do |key, val| %>
-<%= "#{key}: #{val}" %>
-<% end %>
+<h3>Hey Captain! You got a new message from your site!</h3>
+<div>
+  <% @record.attributes.slice('name', 'email', 'cruise_type', 'message').each do |key, val| %>
+      <p>
+        <strong><%= key.humanize %></strong>: <%= val %>
+      </p>
+  <% end %>
+</div>
+<h4>Have a great day!</h4>

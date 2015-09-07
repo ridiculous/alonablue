@@ -7,7 +7,7 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.new(reservation_params)
     if @reservation.save
       ReservationMailer.reservation(@reservation).deliver
-      redirect_to new_reservation_path, notice: "Thank you for contacting us. We'll get back to you at our earliest convenience."
+      redirect_to contact_path, notice: "Thank you for contacting us. We'll get back to you at our earliest convenience."
     else
       request.flash[:errors] = @reservation.errors.full_messages
       render :new
