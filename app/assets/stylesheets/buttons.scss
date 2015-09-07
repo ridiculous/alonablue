@@ -99,6 +99,10 @@
 }
 
 @media screen and (max-width: 410px) {
+  body {
+    background-attachment: initial;
+  }
+
   .nav_btn {
     button {
       background-size: 32px;

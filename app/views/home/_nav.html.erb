@@ -19,9 +19,9 @@
     </div>
 
     <div class="nav_btn col-2">
-      <button class="btn btn-green btn-round btn-email">
-        <span class="visuallyhidden">contact us</span>
-      </button>
+      <%= button_tag(class: "btn btn-green btn-round btn-email #{active[:contact]}", onclick: "location.assign('#{new_reservation_path}')") do %>
+          <span class="visuallyhidden">contact us</span>
+      <% end %>
     </div>
 
     <div class="nav_btn col-2">

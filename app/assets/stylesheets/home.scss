@@ -86,4 +86,15 @@
   .center {
     text-align: center !important;
   }
+
+  .action-set {
+    padding-left: 12px;
+  }
+
+  .checkboxes {
+    label,
+    input[type=checkbox] {
+      cursor: pointer;
+    }
+  }
 }

@@ -22,11 +22,12 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
   min-width: 100%;
   min-height: 100%;
 }
 
-p, ol, ul, td {
+p, ol, ul, td, fieldset {
   font-family: $font-family3;
   font-size: 16px;
   line-height: 1.6;
@@ -148,4 +149,14 @@ pre {
 
 img {
   vertical-align: middle;
+}
+
+fieldset {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border: none;
+
+  .field-row {
+    padding: 10px 0;
+  }
 }

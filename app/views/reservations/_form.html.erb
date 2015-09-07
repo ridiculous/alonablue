@@ -1,0 +1,41 @@
+<%= form_for(@reservation) do |f| %>
+    <fieldset>
+      <div class="field-row">
+        <%= f.label :name, 'Your Name' %>
+        <div>
+          <%= f.text_field :name %>
+        </div>
+      </div>
+      <div class="field-row">
+        <%= f.label :email, 'Your Email or Phone #' %>
+        <div>
+          <%= f.text_field :email %>
+        </div>
+      </div>
+      <div class="field-row">
+        <%= f.label :message, 'Message' %>
+        <div>
+          <%= f.text_area :message, rows: 10, style: 'width: 96%' %>
+        </div>
+      </div>
+      <div class="checkboxes">
+        <div class="field-row">
+          <div>
+            <%= f.check_box :morning_discovery_cruise %>
+            <%= f.label :morning_discovery_cruise %>
+          </div>
+          <div>
+            <%= f.check_box :sunset_cocktail_cruise %>
+            <%= f.label :sunset_cocktail_cruise %>
+          </div>
+          <div>
+            <%= f.check_box :island_hopping %>
+            <%= f.label :island_hopping %>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="action-set">
+      <%= f.submit 'Send', class: 'btn btn-blue' %>
+    </div>
+<% end %>

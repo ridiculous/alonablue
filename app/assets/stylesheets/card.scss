@@ -27,7 +27,14 @@
   }
 
   .card_body {
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &.padded {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
     &.bordered {
       border-top: 1px solid rgba(255, 255, 255, 0.2);
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -43,7 +50,7 @@
     h2 {
       box-sizing: border-box;
       position: absolute;
-      bottom: 20px;
+      bottom: 0;
       left: 0;
       padding: 10px;
       width: 100%;
@@ -111,6 +118,16 @@
 .girl-card {
   .card_media {
     background-image: image-url('boat/girl.jpg');
+    height: 420px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.girls-by-boom-card {
+  .card_media {
+    background-image: image-url('boat/girls-by-boom.jpg');
     height: 420px;
     background-size: cover;
     background-position: 50% 50%;
