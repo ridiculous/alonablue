@@ -86,6 +86,8 @@
 }
 
 .yacht-card {
+  position: relative;
+
   .card_media {
     background-image: image-url('boat/11696806_902139349824376_810806211_n.jpg');
     height: 420px;
@@ -125,14 +127,20 @@
   }
 }
 
-.girls-by-boom-card {
+.couple-cover-card {
+  position: relative;
+
   .card_media {
-    background-image: image-url('boat/girls-by-boom.jpg');
+    background-image: image-url('couple-on-back.jpg');
     height: 420px;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
+}
+
+.girls-by-boom-card {
+  background-image: image-url('boat/girls-by-boom.jpg');
 }
 
 .card-group {
@@ -213,5 +221,23 @@
 .food-on-deck-card {
   .card_media {
     background-image: image-url('food/food-on-deck');
+  }
+}
+
+.couple-card {
+  .card_media {
+    background-image: image-url('couple.jpg');
+  }
+}
+
+.group-on-deck-card {
+  .card_media {
+    background-image: image-url('group.jpg');
+  }
+}
+
+.romance-card {
+  .card_media {
+    background-image: image-url('jig-at-sunset.jpg');
   }
 }
