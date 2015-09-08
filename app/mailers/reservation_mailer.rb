@@ -3,6 +3,8 @@ class ReservationMailer < ActionMailer::Base
 
   def reservation(record)
     @record = record
-    mail(to: 'arebuckley@gmail.com', subject: 'New Reservation for Alona Blue')
+    recipients = ['Ryan <arebuckley@gmail.com>']
+    recipients << 'Captain Mike <boholblue@gmail.com>' if Rails.env.production?
+    mail(to: recipients, subject: 'New Reservation for Alona Blue')
   end
 end
