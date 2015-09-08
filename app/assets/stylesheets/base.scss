@@ -37,6 +37,13 @@ body {
   }
 }
 
+a.tel:before {
+  content: "\260E";
+  display: inline-block;
+  margin-right: 0.5em;
+  text-decoration: underline;
+}
+
 p, ol, ul, td, fieldset {
   font-family: $font-family3;
   font-size: 16px;
