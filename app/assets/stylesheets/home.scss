@@ -122,4 +122,14 @@
       border: 1px solid $orange;
     }
   }
+
+  .overlay {
+    $iframe-height: 438px;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    height: $iframe-height;
+    top: $iframe-height;
+    margin-top: -$iframe-height;
+  }
 }

@@ -89,11 +89,8 @@
   position: relative;
 
   .card_media {
+    @extend .card-cover;
     background-image: image-url('boat/11696806_902139349824376_810806211_n.jpg');
-    height: 420px;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
@@ -119,11 +116,8 @@
 
 .girl-card {
   .card_media {
+    @extend .card-cover;
     background-image: image-url('boat/girl.jpg');
-    height: 420px;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
   }
 }
 
@@ -131,16 +125,20 @@
   position: relative;
 
   .card_media {
+    @extend .card-cover;
     background-image: image-url('couple-on-back.jpg');
-    height: 420px;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
   }
 }
 
 .girls-by-boom-card {
   background-image: image-url('boat/girls-by-boom.jpg');
+}
+
+.card-cover {
+  height: 420px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .card-group {
@@ -239,5 +237,29 @@
 .romance-card {
   .card_media {
     background-image: image-url('jig-at-sunset.jpg');
+  }
+}
+
+.trip-advisor-review-card {
+  padding: 10px;
+
+  .card_media {
+    // Override the tripadvisor container width
+    #CDSWIDSSP {
+      width: 100% !important;
+
+      .widSSPData {
+        border: none !important;
+      }
+    }
+  }
+}
+
+.skipper-card {
+  position: relative;
+
+  .card_media {
+    @extend .card-cover;
+    background-image: image-url('boat/skipper-mike-sunset.jpg');
   }
 }

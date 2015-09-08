@@ -7,4 +7,7 @@ class HomeController < ApplicationController
 
   def gallery
   end
+
+  def location
+  end
 end

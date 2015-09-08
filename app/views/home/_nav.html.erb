@@ -1,33 +1,33 @@
 <div class="btn_nav">
   <div class="grid-10">
     <div class="nav_btn col-2">
-      <%= button_tag(class: "btn btn-blue btn-round btn-compass #{active[:home]}", onclick: "location.assign('#{root_path}')") do %>
+      <%= button_tag(class: "btn btn-blue btn-round btn-compass #{current_page[:home]}", onclick: "location.assign('#{root_path}')") do %>
           <span class="visuallyhidden">view the home page</span>
       <% end %>
     </div>
 
     <div class="nav_btn col-2">
-      <%= button_tag(class: "btn btn-light-teal btn-round btn-boat #{active[:catamaran]}", onclick: "location.assign('#{catamaran_path}')") do %>
+      <%= button_tag(class: "btn btn-light-teal btn-round btn-boat #{current_page[:catamaran]}", onclick: "location.assign('#{catamaran_path}')") do %>
           <span class="visuallyhidden">description of the alona blue catamaran</span>
       <% end %>
     </div>
 
     <div class="nav_btn col-2">
-      <%= button_tag(class: "btn btn-orange btn-round btn-gallery #{active[:gallery]}", onclick: "location.assign('#{gallery_path}')") do %>
+      <%= button_tag(class: "btn btn-orange btn-round btn-gallery #{current_page[:gallery]}", onclick: "location.assign('#{gallery_path}')") do %>
           <span class="visuallyhidden">view the photo gallery</span>
       <% end %>
     </div>
 
     <div class="nav_btn col-2">
-      <%= button_tag(class: "btn btn-green btn-round btn-email #{active[:contact]}", onclick: "location.assign('#{contact_path}')") do %>
+      <%= button_tag(class: "btn btn-green btn-round btn-email #{current_page[:contact]}", onclick: "location.assign('#{contact_path}')") do %>
           <span class="visuallyhidden">contact us</span>
       <% end %>
     </div>
 
     <div class="nav_btn col-2">
-      <button class="btn btn-teal btn-round btn-location">
-        <span class="visuallyhidden">find alona blue on the map</span>
-      </button>
+      <%= button_tag(class: "btn btn-teal btn-round btn-location #{current_page[:location]}", onclick: "location.assign('#{location_path}')") do %>
+          <span class="visuallyhidden">find alona blue on the map</span>
+      <% end %>
     </div>
   </div>
 </div>
