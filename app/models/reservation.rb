@@ -3,6 +3,8 @@ class Reservation < ActiveRecord::Base
 
   validates :name, :message, :email,
             presence: true
+  validates :email,
+            format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})|[\d\s()+-.*]+\Z/i }
 
   before_save :copy_cruise_options
 
