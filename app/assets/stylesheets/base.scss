@@ -27,6 +27,16 @@ body {
   min-height: 100%;
 }
 
+.white-text {
+  a {
+    color: #eade42;
+
+    &:visited {
+      color: #eade42;
+    }
+  }
+}
+
 p, ol, ul, td, fieldset {
   font-family: $font-family3;
   font-size: 16px;
@@ -41,8 +51,12 @@ pre {
   font-size: 11px;
 }
 
-ul li {
-  list-style: none;
+ul {
+  padding: 10px;
+
+  li {
+    margin-left: 10px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, li {
