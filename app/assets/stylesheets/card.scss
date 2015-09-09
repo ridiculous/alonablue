@@ -12,8 +12,8 @@
     background-color: #FFF;
   }
 
-  &.orange {
-    background-color: $orange;
+  &.aqua {
+    background-color: darken($aqua, 15%);
   }
 
   .card_support {

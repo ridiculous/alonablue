@@ -9,6 +9,10 @@
   @include btn($orange);
 }
 
+.btn-aqua {
+  @include btn($aqua);
+}
+
 .btn-teal {
   @include btn($teal);
 }
