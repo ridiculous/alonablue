@@ -7,7 +7,7 @@
     </div>
 
     <div class="nav_btn col-2">
-      <%= button_tag(class: "btn btn-light-teal btn-round btn-boat #{current_page[:catamaran]}", onclick: "location.assign('#{catamaran_path}')") do %>
+      <%= button_tag(class: "btn btn-teal btn-round btn-boat #{current_page[:catamaran]}", onclick: "location.assign('#{catamaran_path}')") do %>
           <span class="visuallyhidden"><%= link_to 'Catamaran', catamaran_path %></span>
       <% end %>
     </div>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="nav_btn col-2">
-      <%= button_tag(class: "btn btn-teal btn-round btn-email #{current_page[:contact]}", onclick: "location.assign('#{contact_path}')") do %>
+      <%= button_tag(class: "btn btn-light-teal btn-round btn-email #{current_page[:contact]}", onclick: "location.assign('#{contact_path}')") do %>
           <span class="visuallyhidden"><%= link_to 'Contact Us', contact_path %></span>
       <% end %>
     </div>
