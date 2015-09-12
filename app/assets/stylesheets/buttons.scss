@@ -102,7 +102,7 @@
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 500px) {
   body {
     background-attachment: initial;
   }
@@ -112,6 +112,12 @@
       background-size: 32px;
       height: 55px;
       width: 55px;
+    }
+  }
+
+  .the-crew-card {
+    .card_media {
+      zoom: 0.7
     }
   }
 }

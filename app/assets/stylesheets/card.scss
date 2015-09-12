@@ -73,7 +73,7 @@
 .jenny-card {
   .card_media {
     height: 316px;
-    background-image: image-url('boat/bgbg.jpg');
+    background-image: image-url('boat/jenny-in-the-sunset.jpg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: none;
@@ -94,15 +94,15 @@
 
   .card_media {
     @extend .card-cover;
-    background-image: image-url('boat/11696806_902139349824376_810806211_n.jpg');
+    background-image: image-url('boat/front-view-of-alonablue.jpg');
   }
 }
 
 .the-crew-card {
   .card_media {
-    background-image: image-url('boat/crew.jpg');
+    background-image: image-url('boat/alonablue-first-crew.jpg');
     height: 426px;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -286,6 +286,9 @@
   padding: 10px;
 
   .card_media {
+    ul li {
+      list-style: none;
+    }
     // Override the tripadvisor container width
     #CDSWIDSSP {
       width: 100% !important;
@@ -310,6 +313,6 @@
   .card_media {
     @extend .card-cover;
     height: 639px;
-    background-image: image-url('cebu-bohol.jpg');
+    background-image: image-url('route-cebu-to-bohol.jpg');
   }
 }
