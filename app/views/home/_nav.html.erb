@@ -2,25 +2,25 @@
   <div class="grid-10">
     <div class="nav_btn col-2">
       <%= button_tag(class: "btn btn-blue btn-round btn-compass #{current_page[:home]}", onclick: "location.assign('#{root_path}')") do %>
-          <span class="visuallyhidden">view the home page</span>
+          <span class="visuallyhidden"><%= link_to 'Home', root_path %></span>
       <% end %>
     </div>
 
     <div class="nav_btn col-2">
       <%= button_tag(class: "btn btn-light-teal btn-round btn-boat #{current_page[:catamaran]}", onclick: "location.assign('#{catamaran_path}')") do %>
-          <span class="visuallyhidden">description of the alona blue catamaran</span>
+          <span class="visuallyhidden"><%= link_to 'Catamaran', catamaran_path %></span>
       <% end %>
     </div>
 
     <div class="nav_btn col-2">
       <%= button_tag(class: "btn btn-aqua btn-round btn-gallery #{current_page[:gallery]}", onclick: "location.assign('#{gallery_path}')") do %>
-          <span class="visuallyhidden">view the photo gallery</span>
+          <span class="visuallyhidden"><%= link_to 'Photo Gallery', gallery_path %></span>
       <% end %>
     </div>
 
     <div class="nav_btn col-2">
       <%= button_tag(class: "btn btn-green btn-round btn-email #{current_page[:contact]}", onclick: "location.assign('#{contact_path}')") do %>
-          <span class="visuallyhidden">contact us</span>
+          <span class="visuallyhidden"><%= link_to 'Contact Us', contact_path %></span>
       <% end %>
     </div>
 

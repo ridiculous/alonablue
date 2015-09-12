@@ -305,3 +305,11 @@
     background-image: image-url('boat/skipper-mike-sunset.jpg');
   }
 }
+
+.cebu-bohol-card {
+  .card_media {
+    @extend .card-cover;
+    height: 639px;
+    background-image: image-url('cebu-bohol.jpg');
+  }
+}
