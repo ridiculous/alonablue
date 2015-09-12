@@ -1,6 +1,7 @@
 class ReservationsController < ApplicationController
   def new
     @reservation = Reservation.new
+    @current_page = :contact
   end
 
   def create

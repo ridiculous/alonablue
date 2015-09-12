@@ -1,0 +1,1 @@
+DuckPuncher.punch! :Array
