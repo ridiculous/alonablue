@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get 'gallery' => 'home#gallery'
   get 'location' => 'home#location'
   get 'contact' => 'reservations#new'
+  get 'reservations' => 'reservations#new'
   resources :reservations, only: [:new, :create]
 end

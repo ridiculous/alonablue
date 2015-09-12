@@ -14,11 +14,17 @@ module NavHelper
   PAGES = Hash.new NullPage
   %i[root catamaran gallery location contact].each { |page| PAGES[page] = Page.new(page) }
 
-  def nav(name, classes, title: '', &block)
+  def nav_btn(name, classes, title: '')
     path = public_send("#{name}_path")
     css = 'btn btn-round'
     css << ' ' << classes.split(' ').m(:prepend, 'btn-').join(' ')
     css << ' active' if PAGES[name].active?(@current_page)
-    button_tag(class: css.squish, title: title, onclick: "location.assign('#{path}')", &block)
+    content_tag(:div, class: 'nav_btn col-2') do
+      button_tag(class: css.squish, title: title, onclick: "location.assign('#{path}')") do
+        content_tag(:span, class: 'visuallyhidden') do
+          link_to title, path
+        end
+      end
+    end
   end
 end

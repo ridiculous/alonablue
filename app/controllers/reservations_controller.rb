@@ -1,7 +1,8 @@
 class ReservationsController < ApplicationController
+  before_filter { @current_page = :contact }
+
   def new
     @reservation = Reservation.new
-    @current_page = :contact
   end
 
   def create
