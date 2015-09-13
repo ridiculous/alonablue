@@ -1,5 +1,5 @@
 class ReservationsController < ApplicationController
-  before_filter { @current_page = :contact }
+  before_filter :config_nav
 
   def new
     @reservation = Reservation.new
@@ -20,5 +20,10 @@ class ReservationsController < ApplicationController
 
   def reservation_params
     params.require(:reservation).permit!
+  end
+
+  def config_nav
+    @current_page = :contact
+    @page_title = 'Contact'
   end
 end
