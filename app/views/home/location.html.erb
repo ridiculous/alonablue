@@ -5,7 +5,7 @@
       <div class="card_media">
         <h2 class="white-text">Location</h2>
       </div>
-      <%= card_support_text("We are located in Tagbilaran City, on Bohol") %>
+      <%= card_support_text("We are located in Tagbilaran City, on the island of Bohol") %>
     </div>
   </div>
 </div>
@@ -44,6 +44,11 @@
     (function () {
         var latLong = new google.maps.LatLng(9.649510, 123.847337);
         var mapOptions = {
+            scrollwheel: false,
+            navigationControl: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            draggable: false,
             zoom: 14,
             mapTypeId: google.maps.MapTypeId.HYBRID,
             center: latLong
