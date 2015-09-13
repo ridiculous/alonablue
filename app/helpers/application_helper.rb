@@ -13,4 +13,8 @@ module ApplicationHelper
         </div>
       </div>).html_safe
   end
+
+  def page_title
+    "#{@page_title} | Alona Blue Charters".sub(/^[|\s]*/, '')
+  end
 end
