@@ -142,5 +142,6 @@
     height: $iframe-height;
     top: $iframe-height;
     margin-top: -$iframe-height;
+    z-index: 1000;
   }
 }

@@ -11,10 +11,9 @@
 </div>
 <div class="grid">
   <div class="row-8-col right">
-    <div class="card white" style="position: relative">
+    <div class="card map-card white" style="position: relative">
       <div class="overlay" title="Click or tap to enable the map" alt="Click or tap to enable the map" onClick="style.pointerEvents='none'"></div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1362.8957135442747!2d123.84756610944048!3d9.649639138005433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d9.6495145!2d123.8473719!5e1!3m2!1sen!2sus!4v1441771216804" width="100%" height="435" frameborder="0" style="border:0"></iframe>
-      <!--<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=z3OWUB44rGDU.k8PWvcH3KumA" width="100%" height="435" frameborder="0" style="border:0"></iframe>-->
+      <div id="map"></div>
     </div>
   </div>
   <div class="row-4-col right">
@@ -39,3 +38,27 @@
     </div>
   </div>
 </div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbernP0NZYEAk0kDX-Yt1z0_jJj0CkMH0&sensor=false&libraries=geometry">
+</script>
+<script>
+    (function () {
+        var latLong = new google.maps.LatLng(9.649510, 123.847337);
+        var mapOptions = {
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.HYBRID,
+            center: latLong
+        };
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        var markerOptions = {
+            position: latLong,
+            map: map,
+            title: 'Alona Blue Sailing Charters'
+        };
+        var marker = new google.maps.Marker(markerOptions);
+        var info_window = new google.maps.InfoWindow({
+            size: new google.maps.Size(150, 50)
+        });
+        info_window.setContent('<p><strong>Alona Blue Sailing Charters</strong><br/>Tagbilaran Pier, Bohol</p>');
+        info_window.open(map, marker);
+    })()
+</script>
