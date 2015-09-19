@@ -17,7 +17,7 @@
   }
 
   .card_support {
-    font-size: 16px;
+    font-size: $font-size;
     line-height: 20px;
     padding: 25px 10px 25px 15px;
 
@@ -101,7 +101,7 @@
 .the-crew-card {
   .card_media {
     background-image: image-url('boat/alonablue-first-crew.jpg');
-    height: 426px;
+    height: 439px;
     background-position: 40% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -282,7 +282,7 @@
 }
 
 .trip-advisor-review-card {
-  min-height: 426px;
+  min-height: 439px;
   padding: 10px;
 
   .card_media {
@@ -292,6 +292,9 @@
     // Override the tripadvisor container width
     #CDSWIDSSP {
       width: 100% !important;
+      * {
+        font-size: 12px !important;
+      }
 
       .widSSPData {
         border: none !important;
@@ -319,6 +322,6 @@
 
 .map-card {
   #map {
-    min-height: 426px;
+    min-height: 439px;
   }
 }
