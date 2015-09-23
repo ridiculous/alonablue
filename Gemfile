@@ -5,7 +5,6 @@ gem 'pg', '~> 0.18.3'
 gem 'sass-rails', '~> 5.0.4'
 gem 'uglifier', '~> 2.7.2'
 gem 'jquery-rails', '~> 4.0.5'
-gem 'turbolinks', '~> 2.5.3'
 
 group :development, :test do
   gem 'quiet_assets', '~> 1.1.0'
