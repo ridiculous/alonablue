@@ -1,12 +1,8 @@
+@import 'oo';
+
 .grid {
-  &:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 1px;
-  }
+  @extend .clear-fix;
+
   .row-1-col,
   .row-2-col,
   .row-4-col,
@@ -47,14 +43,7 @@
 }
 
 .grid-10 {
-  &:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 1px;
-  }
+  @extend .clear-fix;
 
   .col-2 {
     float: left;

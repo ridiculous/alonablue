@@ -1,5 +1,6 @@
 @import 'mixins';
 @import 'vars';
+@import 'oo';
 
 .alona-blue {
   &.layout {
@@ -68,6 +69,10 @@
       line-height: 24px;
       padding: 25px 10px 25px 15px;
       background: #F5F5F5;
+
+      * {
+        text-align: center;
+      }
     }
   }
 
@@ -132,6 +137,13 @@
     input,
     textarea {
       border: 1px solid $orange;
+    }
+  }
+
+  .footer-social-media-section {
+    padding-top: 15px;
+    a {
+      text-decoration: none;
     }
   }
 }
