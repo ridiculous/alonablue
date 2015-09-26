@@ -16,10 +16,10 @@ end
 
 # needed by heroku
 gem 'rails_12factor', '~> 0.0.3', group: :production
-gem 'thin', '~> 1.6.3', group: :production
+gem 'thin', '1.6.4', group: :production
 
 # custom stuff
-gem 'duck_puncher', '~> 2.0.0'
+gem 'duck_puncher', '~> 2.1.0'
 
 # do stuff asynchronously with active jobs
 gem 'sucker_punch', '~> 1.0'

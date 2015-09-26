@@ -6,7 +6,7 @@ describe ApplicationHelper, type: :helper do
       before { @page_title = 'Contact Us' }
 
       it 'returns the title using the @page_title' do
-        expect(helper.page_title).to eq 'Contact Us | Alona Blue Charters'
+        expect(helper.page_title).to eq 'Contact Us | Alona Blue Sailing Charters'
       end
     end
 
@@ -14,7 +14,7 @@ describe ApplicationHelper, type: :helper do
       before { @page_title = nil }
 
       it 'returns the default title for the page' do
-        expect(helper.page_title).to eq 'Alona Blue Charters'
+        expect(helper.page_title).to eq 'Alona Blue Sailing Charters'
       end
     end
   end
