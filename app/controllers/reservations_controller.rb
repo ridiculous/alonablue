@@ -9,7 +9,7 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.new(reservation_params)
     if @reservation.save
       ReservationMailer.reservation(@reservation).deliver_later
-      redirect_to contact_path, notice: "Thank you for contacting us. We'll get back to you at our earliest convenience."
+      redirect_to charter_path, notice: "Thank you for contacting us. We'll get back to you at our earliest convenience."
     else
       request.flash[:errors] = @reservation.errors.full_messages
       render :new
@@ -23,7 +23,7 @@ class ReservationsController < ApplicationController
   end
 
   def config_nav
-    @current_page = :contact
+    @current_page = :charter
     @page_title = 'Contact'
   end
 end
