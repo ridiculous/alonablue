@@ -10,7 +10,7 @@ class HomeController < ApplicationController
 
   def gallery
     @current_page = :gallery
-    @page_title = 'Photo Gallery'
+    @page_title = 'Media Gallery'
   end
 
   def location
